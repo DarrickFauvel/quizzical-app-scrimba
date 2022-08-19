@@ -1,0 +1,54 @@
+:root {
+  --bg-blob-top: url('./assets/blob-top.svg') top -182px right -176px no-repeat;
+  --bg-blob-bottom: url('./assets/blob-bottom.svg') bottom -117px left -149px
+    no-repeat;
+}
+
+body {
+  background: var(--bg-blob-top), var(--bg-blob-bottom);
+}
+
+/* div {
+  border: 1px solid green;
+} */
+
+.app {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  height: 100vh;
+  /* min-width: 100vw; */
+  padding: 13.5%;
+}
+
+/* .bg-blob-top,
+.bg-blob-bottom {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-blob-top {
+  background: var(--bg-blob-top);
+}
+
+.bg-blob-bottom {
+  background: var(--bg-blob-bottom);
+} */
+
+.intro {
+  display: grid;
+  justify-items: center;
+  gap: calc((7 / 16) * 1em);
+  width: 100%;
+}
+
+.intro .btn {
+  margin-top: calc((22 / 16) * 1em);
+}
+
+.choices {
+  display: flex;
+  gap: calc((13 / 16) * 1em);
+}

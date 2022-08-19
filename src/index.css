@@ -1,0 +1,45 @@
+:root {
+  --bg-color: hsla(220, 43%, 97%, 1);
+  --ff-primary: 'Karla', sans-serif;
+  --ff-secondary: 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--ff-secondary);
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: var(--ff-primary);
+}
+
+.btn {
+  border: none;
+  border-radius: calc((15 / 16) * 1em);
+  padding-block: 1em;
+  padding-inline: calc((28 / 16) * 1em);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+}
+
+.btn-secondary {
+  border: 1px solid;
+  border-radius: calc((8 / 16) * 1em);
+  min-width: calc((65 / 16) * 1em);
+  padding-block: calc((4 / 16) * 1em);
+  padding-inline: calc((20 / 16) * 1em);
+}
