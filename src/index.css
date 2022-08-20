@@ -24,7 +24,7 @@ h1 {
 
 .btn {
   border: none;
-  border-radius: calc((15 / 16) * 1em);
+  border-radius: 1em;
   padding-block: 1em;
   padding-inline: calc((28 / 16) * 1em);
   text-decoration: none;
