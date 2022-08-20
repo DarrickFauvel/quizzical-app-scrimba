@@ -16,9 +16,9 @@ const Question = ({ question }) => {
   }, [])
 
   return (
-    <div className='quiz-item'>
-      <p className='question'>{question.question}</p>
-      <div className='choices'>
+    <div className='question'>
+      <p className='question-text'>{parse(question.question)}</p>
+      <div className='question-choices'>
         {answers.map((answer, index) => (
           <button className='btn btn-secondary' key={index}>
             {answer}
