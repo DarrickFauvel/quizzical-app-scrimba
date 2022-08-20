@@ -20,7 +20,7 @@ const Quiz = () => {
   }, [])
 
   return (
-    <div className='quiz'>
+    <div className='quiz-view'>
       <div className='quiz-container container'>
         {isLoading ? (
           <p>Loading...</p>
