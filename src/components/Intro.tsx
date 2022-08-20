@@ -8,7 +8,9 @@ const Intro = () => {
     <div className='intro'>
       <h1>Quizzical</h1>
       <p>Some description if needed</p>
-      <button className='btn btn-primary' onClick={() => setGameState('quiz')}>
+        <button
+          className='btn btn-primary'
+          onClick={() => setGameState('quiz')}>
         Start quiz
       </button>
     </div>
