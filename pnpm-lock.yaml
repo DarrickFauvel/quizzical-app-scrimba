@@ -4,12 +4,14 @@ specifiers:
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.1
+  html-react-parser: ^3.0.2
   react: ^18.2.0
   react-dom: ^18.2.0
   typescript: ^4.6.4
   vite: ^3.0.7
 
 dependencies:
+  html-react-parser: 3.0.2_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -439,9 +441,41 @@ packages:
       ms: 2.1.2
     dev: true
 
+  /dom-serializer/2.0.0:
+    resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      entities: 4.3.1
+    dev: false
+
+  /domelementtype/2.3.0:
+    resolution: {integrity: sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==}
+    dev: false
+
+  /domhandler/5.0.3:
+    resolution: {integrity: sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==}
+    engines: {node: '>= 4'}
+    dependencies:
+      domelementtype: 2.3.0
+    dev: false
+
+  /domutils/3.0.1:
+    resolution: {integrity: sha512-z08c1l761iKhDFtfXO04C7kTdPBLi41zwOZl00WS8b5eiaebNpY00HKbztwBq+e3vyqWNwWF3mP9YLUeqIrF+Q==}
+    dependencies:
+      dom-serializer: 2.0.0
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+    dev: false
+
   /electron-to-chromium/1.4.224:
     resolution: {integrity: sha512-dOujC5Yzj0nOVE23iD5HKqrRSDj2SD7RazpZS/b/WX85MtO6/LzKDF4TlYZTBteB+7fvSg5JpWh0sN7fImNF8w==}
     dev: true
+
+  /entities/4.3.1:
+    resolution: {integrity: sha512-o4q/dYJlmyjP2zfnaWDUC6A3BQFmVTX+tZPezK7k0GLSU9QYCauscf5Y+qcEPzKL+EixVouYDgLQK5H9GrLpkg==}
+    engines: {node: '>=0.12'}
+    dev: false
 
   /esbuild-android-64/0.14.54:
     resolution: {integrity: sha512-Tz2++Aqqz0rJ7kYBfz+iqyE3QMycD4vk7LBRyWaAVFgFtQ/O8EJOnVmTOiDWYZ/uYzB4kvP+bqejYdVKzE5lAQ==}
@@ -696,6 +730,38 @@ packages:
       function-bind: 1.1.1
     dev: true
 
+  /html-dom-parser/3.1.0:
+    resolution: {integrity: sha512-8j4aA7la5X4R2ilxCNuj+2Rt/DolMO3bVk6rGQIbegljmfwjog7P92CYPdwWsVctRc+EY5gyxBKuoYHtyUB5Sg==}
+    dependencies:
+      domhandler: 5.0.3
+      htmlparser2: 8.0.1
+    dev: false
+
+  /html-react-parser/3.0.2_react@18.2.0:
+    resolution: {integrity: sha512-01mExjRWLvb+vKySk0SkxCQgrH3Iyvl+Ze+l63EH91ON2Brdp75JvPxK7n+4FsCsKECdob/Ol2xa7BLmbKN8hw==}
+    peerDependencies:
+      react: 0.14 || 15 || 16 || 17 || 18
+    dependencies:
+      domhandler: 5.0.3
+      html-dom-parser: 3.1.0
+      react: 18.2.0
+      react-property: 2.0.0
+      style-to-js: 1.1.1
+    dev: false
+
+  /htmlparser2/8.0.1:
+    resolution: {integrity: sha512-4lVbmc1diZC7GUJQtRQ5yBAeUCL1exyMwmForWkRLnwyzWBFxN633SALPMGYaWZvKe9j1pRZJpauvmxENSp/EA==}
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      domutils: 3.0.1
+      entities: 4.3.1
+    dev: false
+
+  /inline-style-parser/0.1.1:
+    resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
+    dev: false
+
   /is-core-module/2.10.0:
     resolution: {integrity: sha512-Erxj2n/LDAZ7H8WNJXd9tw38GYM3dv8rk8Zcs+jJuxYTW7sozH+SS8NtrSjVL1/vpLvWi1hxy96IzjJ3EHTJJg==}
     dependencies:
@@ -772,6 +838,10 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-property/2.0.0:
+    resolution: {integrity: sha512-kzmNjIgU32mO4mmH5+iUyrqlpFQhF8K2k7eZ4fdLSOPFrD1XgEuSBv9LDEgxRXTMBqMd8ppT0x6TIzqE5pdGdw==}
+    dev: false
+
   /react-refresh/0.14.0:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
@@ -824,6 +894,18 @@ packages:
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
     dev: true
+
+  /style-to-js/1.1.1:
+    resolution: {integrity: sha512-RJ18Z9t2B02sYhZtfWKQq5uplVctgvjTfLWT7+Eb1zjUjIrWzX5SdlkwLGQozrqarTmEzJJ/YmdNJCUNI47elg==}
+    dependencies:
+      style-to-object: 0.3.0
+    dev: false
+
+  /style-to-object/0.3.0:
+    resolution: {integrity: sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==}
+    dependencies:
+      inline-style-parser: 0.1.1
+    dev: false
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
