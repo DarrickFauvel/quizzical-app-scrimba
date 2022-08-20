@@ -6,7 +6,6 @@ const API_URL =
   'https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple'
 
 const Quiz = () => {
-  const [isLoading, setIsLoading] = useState(true)
   const [questions, setQuestions] = useState([])
   const { isLoading, setIsLoading } = useContext(QuizContext)
 
@@ -18,11 +17,11 @@ const Quiz = () => {
       setIsLoading(false)
     }
     getQuizData()
-    setIsLoading(false)
   }, [])
 
   return (
     <div className='quiz'>
+      <div className='quiz-container container'>
         {isLoading ? (
           <p>Loading...</p>
         ) : (
@@ -36,6 +35,7 @@ const Quiz = () => {
             </button>
           </>
         )}
+      </div>
     </div>
   )
 }
