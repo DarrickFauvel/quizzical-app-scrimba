@@ -23,10 +23,19 @@ const Quiz = () => {
 
   return (
     <div className='quiz'>
-      {isLoading && <p>Loading...</p>}
-      {questions.map((question, index: number) => (
-        <Question question={question} key={index} />
-      ))}
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : (
+          <>
+            {questions.map((question, index: number) => (
+              <Question question={question} key={index} />
+            ))}
+
+            <button className='btn btn-primary check-answers'>
+              Check answers
+            </button>
+          </>
+        )}
     </div>
   )
 }
