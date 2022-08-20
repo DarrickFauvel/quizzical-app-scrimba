@@ -6,6 +6,7 @@ import Intro from './components/Intro'
 import Quiz from './components/Quiz'
 
 function App() {
+  const [gameState, setGameState] = useState<string>('start')
   const [isLoading, setIsLoading] = useState(true)
 
   return (
