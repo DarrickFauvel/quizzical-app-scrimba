@@ -48,3 +48,7 @@ h1 {
 .btn-secondary:hover {
   background-color: hsla(230, 61%, 90%, 40%);
 }
+
+.btn-secondary .selected {
+  background-color: hsla(230, 61%, 90%, 100%);
+}
