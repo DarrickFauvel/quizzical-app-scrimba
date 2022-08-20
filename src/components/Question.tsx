@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import ChoiceButton from './ChoiceButton'
 
 const Question = ({ question }) => {
   const [correctAnswer, setCorrectAnswer] = useState(question.correct_answer)
@@ -20,9 +21,7 @@ const Question = ({ question }) => {
       <p className='question-text'>{parse(question.question)}</p>
       <div className='question-choices'>
         {answers.map((answer, index) => (
-          <button className='btn btn-secondary' key={index}>
-            {answer}
-          </button>
+          <ChoiceButton answer={answer} key={index} />
         ))}
       </div>
     </div>
