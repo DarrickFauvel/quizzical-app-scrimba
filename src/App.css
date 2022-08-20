@@ -34,8 +34,8 @@ body {
   gap: calc((7 / 16) * 1em);
 }
 
-.bg-blob-top {
-  background: var(--bg-blob-top);
+.intro .btn {
+  margin-top: calc((22 / 16) * 1em);
 }
 
 .bg-blob-bottom {
