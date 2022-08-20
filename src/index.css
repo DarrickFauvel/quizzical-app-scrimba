@@ -37,9 +37,10 @@ h1 {
 }
 
 .btn-secondary {
-  border: 1px solid;
-  border-radius: calc((8 / 16) * 1em);
+  background-color: transparent;
+  border: 1px solid #4d5b9e;
+  border-radius: 0.5em;
   min-width: calc((65 / 16) * 1em);
-  padding-block: calc((4 / 16) * 1em);
+  padding-block: 0.5em;
   padding-inline: calc((20 / 16) * 1em);
 }
