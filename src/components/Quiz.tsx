@@ -15,6 +15,7 @@ const Quiz = () => {
       const response = await fetch(API_URL)
       const data = await response.json()
       setQuestions(data.results)
+      setIsLoading(false)
     }
     getQuizData()
     setIsLoading(false)
