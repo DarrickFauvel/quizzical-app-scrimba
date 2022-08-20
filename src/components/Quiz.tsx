@@ -8,6 +8,7 @@ const API_URL =
 const Quiz = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [questions, setQuestions] = useState([])
+  const { isLoading, setIsLoading } = useContext(QuizContext)
 
   useEffect(() => {
     const getQuizData = async () => {
