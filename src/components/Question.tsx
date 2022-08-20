@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import parse from 'html-react-parser'
 import ChoiceButton from './ChoiceButton'
 
 const Question = ({ question }) => {
