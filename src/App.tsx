@@ -6,14 +6,13 @@ import Intro from './components/Intro'
 import Quiz from './components/Quiz'
 
 function App() {
-  const [gameState, setGameState] = useState('start')
-
-  const handleClick = () => {}
+  const [isLoading, setIsLoading] = useState(true)
 
   return (
     <div className='app'>
       <div className='app-container'>
-        <QuizContext.Provider value={{ gameState, setGameState }}>
+        <QuizContext.Provider
+          value={{ isLoading, setIsLoading, gameState, setGameState }}>
           {gameState === 'start' && <Intro />}
           {gameState === 'quiz' && <Quiz />}
           {gameState === 'end' && <End />}
