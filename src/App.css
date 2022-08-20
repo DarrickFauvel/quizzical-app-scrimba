@@ -17,6 +17,13 @@ body {
   flex-direction: column;
   width: 80%;
 }
+
+/* Intro view */
+.intro-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   /* min-width: 100vw; */
   padding: 13.5%;
