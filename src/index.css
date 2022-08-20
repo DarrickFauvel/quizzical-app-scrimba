@@ -44,3 +44,7 @@ h1 {
   padding-block: 0.5em;
   padding-inline: calc((20 / 16) * 1em);
 }
+
+.btn-secondary:hover {
+  background-color: hsla(230, 61%, 90%, 40%);
+}
