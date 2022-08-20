@@ -6,6 +6,7 @@ const Intro = () => {
 
   return (
     <div className='intro'>
+      <div className='intro-container container'>
       <h1>Quizzical</h1>
       <p>Some description if needed</p>
         <button
@@ -13,6 +14,7 @@ const Intro = () => {
           onClick={() => setGameState('quiz')}>
         Start quiz
       </button>
+      </div>
     </div>
   )
 }
