@@ -7,13 +7,13 @@ const Intro = () => {
   return (
     <div className='intro'>
       <div className='intro-container container'>
-      <h1>Quizzical</h1>
-      <p>Some description if needed</p>
+        <h1>Quizzical</h1>
+        <p>Some description if needed</p>
         <button
           className='btn btn-primary'
           onClick={() => setGameState('quiz')}>
-        Start quiz
-      </button>
+          Start quiz
+        </button>
       </div>
     </div>
   )
