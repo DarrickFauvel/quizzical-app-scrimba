@@ -42,7 +42,11 @@ const Question = ({ data }) => {
       <p className='question-text'>{parse(question)}</p>
       <div className='question-choices'>
         {answers.map((answer, index) => (
-          <ChoiceButton answer={answer} key={index} />
+          <ChoiceButton
+            answer={answer}
+            key={index}
+            handleChoiceClick={handleChoiceClick}
+          />
         ))}
       </div>
     </div>
