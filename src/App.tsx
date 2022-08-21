@@ -10,7 +10,9 @@ function App() {
     <div className='app'>
       <div className='app-container'>
         {gameState === 'start' && <Intro setGameState={setGameState} />}
-        {gameState === 'quiz' && <Quiz />}
+        {gameState === 'quiz' && (
+          <Quiz gameState={gameState} setGameState={setGameState} />
+        )}
       </div>
     </div>
   )
