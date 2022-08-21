@@ -33,9 +33,24 @@ const Quiz = ({ gameState, setGameState }) => {
               <Question data={data} key={index} />
             ))}
 
-            <button className='btn btn-primary check-answers'>
-              Check answers
-            </button>
+            <section className='control'>
+              <div className='checkAnswer'>
+                <button
+                  className='btn btn-primary check-answers'
+                  onClick={checkAnswers}>
+                  Check answers
+                </button>
+              </div>
+
+              <div className='score-display'>
+                <p>You scored ?/{data.length} correct answers</p>
+                <button
+                  className='btn btn-primary play-again'
+                  onClick={() => setGameState('start')}>
+                  Play again
+                </button>
+              </div>
+            </section>
           </>
         )}
       </div>
