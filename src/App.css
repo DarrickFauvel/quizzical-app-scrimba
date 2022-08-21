@@ -73,6 +73,12 @@ body {
   max-width: calc((150 / 16) * 1em);
 }
 
+.choice.selected {
+  background-color: hsla(230, 61%, 90%, 100%);
+  border: 1px solid hsla(230, 61%, 90%, 100%);
+  pointer-events: none;
+}
+
 .check-answers {
   align-self: center;
   width: max-content;
