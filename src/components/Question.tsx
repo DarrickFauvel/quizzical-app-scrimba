@@ -24,6 +24,19 @@ const Question = ({ data }) => {
     shuffleAnswers()
   }, [])
 
+  const handleChoiceClick = (e) => {
+    const selectedButton = e.target
+    const selectedAnswer = selectedButton.dataset.answer
+    const parentEl = selectedButton.parentElement
+    const buttonEls = parentEl.querySelectorAll('button')
+    buttonEls.forEach((button) => {
+      button.dataset.selected = false
+      button.classList.remove('selected')
+    })
+    selectedButton.dataset.selected = true
+    selectedButton.classList.add('selected')
+  }
+
   return (
     <div className='question'>
       <p className='question-text'>{parse(question)}</p>
