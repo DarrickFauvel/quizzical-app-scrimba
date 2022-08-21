@@ -26,7 +26,7 @@ const Question = ({ data }) => {
 
   return (
     <div className='question'>
-      <p className='question-text'>{parse(question.question)}</p>
+      <p className='question-text'>{parse(question)}</p>
       <div className='question-choices'>
         {answers.map((answer, index) => (
           <ChoiceButton answer={answer} key={index} />
