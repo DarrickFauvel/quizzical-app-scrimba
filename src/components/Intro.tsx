@@ -1,5 +1,3 @@
-import { QuizContext } from '../contexts/Context'
-
 const Intro = ({ setGameState }) => {
   return (
     <div className='intro-view'>
