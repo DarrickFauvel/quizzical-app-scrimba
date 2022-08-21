@@ -5,7 +5,7 @@ const API_URL =
   'https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple'
 
 const Quiz = () => {
-  const [questions, setQuestions] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
   const { isLoading, setIsLoading } = useContext(QuizContext)
 
   useEffect(() => {
