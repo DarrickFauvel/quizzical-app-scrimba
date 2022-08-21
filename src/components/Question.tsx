@@ -6,7 +6,7 @@ const Question = ({ data }) => {
   const [question, setQuestion] = useState(data.question)
   const [correctAnswer, setCorrectAnswer] = useState(data.correct_answer)
   const [incorrectAnswers, setIncorrectAnswers] = useState(
-    question.incorrect_answers
+    data.incorrect_answers
   )
   const [answers, setAnswers] = useState([])
 
