@@ -37,6 +37,7 @@ h1 {
 }
 
 .btn-secondary {
+  font-weight: bold;
   background-color: transparent;
   border: 1px solid #4d5b9e;
   border-radius: 0.5em;
