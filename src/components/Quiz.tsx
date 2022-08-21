@@ -4,7 +4,7 @@ import Question from './Question'
 const API_URL =
   'https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple'
 
-const Quiz = () => {
+const Quiz = ({ gameState, setGameState }) => {
   const [isLoading, setIsLoading] = useState(true)
   const [data, setData] = useState([])
 
