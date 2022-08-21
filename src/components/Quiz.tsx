@@ -6,7 +6,7 @@ const API_URL =
 
 const Quiz = () => {
   const [isLoading, setIsLoading] = useState(true)
-  const { isLoading, setIsLoading } = useContext(QuizContext)
+  const [data, setData] = useState([])
 
   useEffect(() => {
     const getQuizData = async () => {
