@@ -79,6 +79,13 @@ body {
   pointer-events: none;
 }
 
+.control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .check-answers {
   align-self: center;
   width: max-content;
