@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react'
 import parse from 'html-react-parser'
 import ChoiceButton from './ChoiceButton'
 
-const Question = ({ question }) => {
-  const [correctAnswer, setCorrectAnswer] = useState(question.correct_answer)
+  const [question, setQuestion] = useState(data.question)
   const [incorrectAnswers, setIncorrectAnswers] = useState(
     question.incorrect_answers
   )
