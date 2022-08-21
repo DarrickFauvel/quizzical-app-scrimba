@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import { QuizContext } from './contexts/Context'
 import './App.css'
-import End from './components/End'
 import Intro from './components/Intro'
 import Quiz from './components/Quiz'
 
