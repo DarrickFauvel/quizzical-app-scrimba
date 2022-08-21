@@ -10,11 +10,17 @@ const Question = ({ question }) => {
   const [answers, setAnswers] = useState([])
 
   useEffect(() => {
-    const combinedAnswers = [
-      question.correct_answer,
-      ...question.incorrect_answers
-    ]
-    setAnswers(combinedAnswers)
+    const shuffleAnswers = () => {
+      const answers = [data.correct_answer, ...data.incorrect_answers]
+      const randomAnswers = []
+      while (answers.length !== 0) {
+        const randomIndex = Math.floor(Math.random() * answers.length)
+        randomAnswers.push(answers[randomIndex])
+        answers.splice(randomIndex, 1)
+      }
+      setAnswers(randomAnswers)
+    }
+    shuffleAnswers()
   }, [])
 
   return (
