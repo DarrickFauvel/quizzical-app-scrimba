@@ -25,8 +25,8 @@ const Quiz = () => {
           <p>Loading...</p>
         ) : (
           <>
-            {questions.map((question, index: number) => (
-              <Question question={question} key={index} />
+            {data.map((data, index: number) => (
+              <Question data={data} key={index} />
             ))}
 
             <button className='btn btn-primary check-answers'>
