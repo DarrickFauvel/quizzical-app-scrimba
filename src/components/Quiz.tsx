@@ -18,6 +18,10 @@ const Quiz = ({ gameState, setGameState }) => {
     getQuizData()
   }, [])
 
+  const checkAnswers = () => {
+    setGameState('end')
+  }
+
   return (
     <div className='quiz-view'>
       <div className='quiz-container container'>
