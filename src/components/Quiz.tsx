@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
-import { QuizContext } from '../contexts/Context'
+import { useEffect, useState } from 'react'
 import Question from './Question'
 
 const API_URL =
