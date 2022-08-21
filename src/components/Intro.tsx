@@ -1,8 +1,6 @@
 import { QuizContext } from '../contexts/Context'
 
-const Intro = () => {
-  const { setGameState } = useContext(QuizContext)
-
+const Intro = ({ setGameState }) => {
   return (
     <div className='intro-view'>
       <div className='intro-container container'>
